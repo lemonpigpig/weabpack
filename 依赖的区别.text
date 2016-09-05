@@ -1,0 +1,23 @@
+npm package.json中的dependencies和devDependencies的区别
+一：
+一个node package有两种依赖，一种是dependencies一种是devDependencies，其中前者依赖的项该是正常运行该包时所需要的依赖项，而后者则是开发的时候需要的依赖项，像一些进行单元测试之类的包。
+
+如果你将包下载下来在包的根目录里运行
+npm install
+默认会安装两种依赖，如果你只是单纯的使用这个包而不需要进行一些改动测试之类的，可以使用
+npm install —production //只安装dependencies而不安装devDependencies。
+
+如果你是通过以下命令进行安装
+npm install packagename
+那么只会安装dependencies，
+
+如果想要安装devDependencies，需要输入
+npm install packagename --dev 
+
+二：
+首先，需要明白：
+
+使用npm i node_module –save自动更新dependencies字段值；
+
+使用npm i node_module –save-dev自动更新devDependencies字段值； 
+

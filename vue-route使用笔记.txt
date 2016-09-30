@@ -9,3 +9,14 @@
 		//do something
 	}
 }
+4.vue-cli脚手架怎么使用
+安装vue-cli之前，需要先安装了vue和webpack
+安装vue-cli
+
+npm install -g vue-cli                       //全局安装vue-cli
+vue init webpack projectName        //生成项目名为projectName的模板，这里的项目名projectName随你自己写
+cd projectName                              
+npm install                                      //初始化安装依赖
+
+
+

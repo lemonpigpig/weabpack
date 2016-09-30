@@ -1,0 +1,11 @@
+1: vue class 简约写法
+:class = [ a>b ? '' : '']
+
+2:vue-router acitve
+<li v-link-active><a v-link={'name':'xxx',active:'activeClass'}></a></li>
+3:vue-router 获取路由参数的变化
+路由参数变化时会出发 route:{
+	data:function(transition){
+		//do something
+	}
+}
